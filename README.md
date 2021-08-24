@@ -1,4 +1,8 @@
 # lavango
+
+Lavango means `avalanche` in [Esperanto](https://en.wikipedia.org/wiki/Esperanto). I have the habit to name my projects 
+in esperanto ;)
+
 An attempt at implementing a bare bone VM in Rust for Avalanche, using the liner chain API.
 
 This will -maybe- be a project participating in https://gitcoin.co/issue/ava-labs/open-defi-hackathon/3/100026354
