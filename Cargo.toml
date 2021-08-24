@@ -1,8 +1,27 @@
 [package]
-name = "lavango"
+name = "lib"
 version = "0.1.0"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]] # Bin to run the HelloWorld gRPC client
+name = "rpcchainvm-client"
+path = "src/rpcchainvm/client.rs"
+
+
+[[bin]] # Bin to run the HelloWorld gRPC server
+name = "tGas3T58KzdjLHhBDMnH2TvrddhqTji5iZAMZ3RXs2NLpSnhH"
+path = "src/rpcchainvm/server.rs"
+
 [dependencies]
+tonic = "0.5"
+prost = "0.8"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+# Tracing
+tracing = "0.1.16"
+tracing-subscriber = { version = "0.2", features = ["tracing-log"] }
+tracing-attributes = "0.1"
+tracing-futures = "0.2"
+[build-dependencies]
+tonic-build = "0.5"
