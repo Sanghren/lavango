@@ -16,6 +16,7 @@ path = "src/rpcchainvm/server.rs"
 
 [dependencies]
 tonic = "0.5"
+tonic-web = "0.1"
 prost = "0.8"
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
 # Tracing

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package lavango;
+
+// EchoRequest is the request for echo.
+message GenesisEncodeRequest {
+  string data = 1;
+}
+
+// EchoResponse is the response for echo.
+message GenesisEncodeResponse {
+  string data = 1;
+}
+
+service GensisEncoder {
+  rpc Encode(GenesisEncodeRequest) returns (GenesisEncodeResponse) {}
+}
